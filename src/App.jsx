@@ -6,6 +6,7 @@ import Projects from "./pages/Projects/Projects";
 import Collaborators from "./pages/Collaborators/Collaborators";
 
 function App() {
+  console.log('running app')
 
   return (
     <HashRouter>
