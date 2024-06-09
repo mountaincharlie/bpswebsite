@@ -8,7 +8,7 @@ import Collaborators from "./pages/Collaborators/Collaborators";
 function App() {
 
   return (
-    <BrowserRouter basename='/bpswebsite'>
+    <BrowserRouter basename='/bpswebsite/'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
