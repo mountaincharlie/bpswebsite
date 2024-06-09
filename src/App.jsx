@@ -7,9 +7,6 @@ import Collaborators from "./pages/Collaborators/Collaborators";
 
 function App() {
 
-  // const baseURL = import.meta.env.VITE_APP_BASE_URL;
-  // console.log('baseURL: ', import.meta.env.VITE_APP_BASE_URL)
-
   return (
     <BrowserRouter basename='/bpswebsite'>
       <Routes>
