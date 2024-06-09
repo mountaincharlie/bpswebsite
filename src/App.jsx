@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Approach from "./pages/Approach/Approach";
@@ -8,21 +8,16 @@ import Collaborators from "./pages/Collaborators/Collaborators";
 function App() {
 
   return (
-    <BrowserRouter basename='/bpswebsite/'>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/approach" element={<Approach />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/collaborators" element={<Collaborators />} />
-        {/* <Route path={`${baseURL}`} element={<Home />} />
-        <Route path={`${baseURL}about`} element={<About />} />
-        <Route path={`${baseURL}approach`} element={<Approach />} />
-        <Route path={`${baseURL}projects`} element={<Projects />} />
-        <Route path={`${baseURL}collaborators`} element={<Collaborators />} /> */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
