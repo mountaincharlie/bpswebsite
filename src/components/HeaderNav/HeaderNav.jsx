@@ -10,7 +10,7 @@ const HeaderNav = () => {
     <div className="headernav">
       {/* logo */}
       <div className="headernav-logo-container">
-        <a href="/">
+        <a href="/bpswebsite/">
           <span className="headernav-logo">
             <img src={logo} alt="Logo"/>
           </span>
