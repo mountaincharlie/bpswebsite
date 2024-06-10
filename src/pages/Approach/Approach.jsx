@@ -7,8 +7,11 @@ const Approach = () => {
   return (
     <div className="approachpage-container">
       <HeaderNav/>
-      <h1 className="heading">Approach content</h1>
-      {/* page content - site name, linkedin button, project example */}
+      <div className="approachpage-content">
+        <div className="approachpage-content-heading">
+          Approach
+        </div>
+      </div>
       <Footer/>
     </div>
   )

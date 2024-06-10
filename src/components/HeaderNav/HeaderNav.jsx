@@ -1,32 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./HeaderNav.scss";
+import { Navbar, Nav } from 'react-bootstrap';
+import './HeaderNav.scss';
 import logo from '../../assets/images/logo.png';
 
-
 const HeaderNav = () => {
-
   return (
-    <div className="headernav">
-      {/* logo */}
-      <div className="headernav-logo-container">
-        <a href="/bpswebsite/">
-          <span className="headernav-logo">
-            <img src={logo} alt="Logo"/>
-          </span>
-        </a>
-      </div>
-      {/* list of links central */}
-      <div className="headernav-links-container">
-        <ul className="headernav-links">
-          <a href="#/about"><li>About</li></a>
-          <a href="#/approach"><li>Approach</li></a>
-          <a href="#/projects"><li>Projects</li></a>
-          <a href="#/collaborators"><li>Collaborators</li></a>
-        </ul>
-      </div>
-    </div>
-  )
+    <Navbar bg="light" expand="lg" className="headernav px-4">
+      <Navbar.Brand href="/" className="headernav-logo-container d-flex align-items-center me-3">
+        <img src={logo} alt="Logo" className="headernav-logo" />
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
+        <Nav className="headernav-links-container">
+          <Nav.Link href="#/about">About</Nav.Link>
+          <Nav.Link href="#/approach">Approach</Nav.Link>
+          <Nav.Link href="#/projects">Projects</Nav.Link>
+          <Nav.Link href="#/collaborators">Collaborators</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  );
 };
 
 export default HeaderNav;

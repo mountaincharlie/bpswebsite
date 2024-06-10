@@ -1,31 +1,20 @@
 @import "../../variables";
 
 .headernav {
-  background-color: $site-yellow;
+  background-color: $site-yellow !important;
   width: 100%;
-  height: 12vh;
   min-height: 5rem;
-  display: flex;
-  flex-direction: row;
 
-  a {
-    text-decoration: none;
+  .navbar-toggler {
+    border-color: $site-green !important;
   }
 
   &-logo-container {
-    width: 33vw;
-    height: 100%;
     display: flex;
     align-items: center;
   }
 
   &-logo {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    margin-left: 1rem;
-    padding: 0.25rem 1rem 0.25rem 1rem;
     width: 8vh !important;
     height: 8vh !important;
     border: 2px solid $site-green;
@@ -38,41 +27,57 @@
     }
 
     img {
-      width: 8vh !important;
-      height: 8vh !important;
+      width: 100%;
+      height: 100%;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       border-radius: 4px;
     }
   }
 
-  &-links-container {
-    width: 33vw;
-    display: flex;
-    justify-content: center;
+  &-toggler-container {
+    position: relative;
+
+    .navbar-collapse {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: $site-yellow;
+      border-top: 1px solid $site-green;
+      margin-top: 10px;
+    }
   }
 
-  &-links {
+  &-links-container {
     display: flex;
-    flex-direction: row;
-    padding: 0 !important;
+    justify-content: center;
     align-items: center;
+  }
 
-    li {
-      font-weight: 700;
-      list-style-type: none !important;
-      text-transform: uppercase;
+  .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $site-green !important;
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+
+    &:hover {
+      color: $site-yellow !important;
+      background-color: $site-green !important;
     }
+  }
 
-    a {
-      color: $site-green;
-      text-decoration: none !important;
-      padding: 0.5rem 1rem 0.5rem 1rem;
-      border-radius: 4px;
+  &-logo {
+    width: 8vh !important;
+    height: 8vh !important;
+    background-color: $site-green;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
 
-      &:hover {
-        color: $site-yellow;
-        background-color: $site-green;
-      }
+    &:hover {
+      border: 4px solid $site-green;
     }
   }
 }
+

@@ -7,8 +7,11 @@ const Collaborators = () => {
   return (
     <div className="collaboratorspage-container">
       <HeaderNav/>
-      <h1 className="heading">Collaborators content</h1>
-      {/* page content - site name, linkedin button, project example */}
+      <div className="collaboratorspage-content">
+        <div className="collaboratorspage-content-heading">
+          Collaborators
+        </div>
+      </div>
       <Footer/>
     </div>
   )

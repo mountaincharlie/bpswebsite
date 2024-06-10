@@ -7,8 +7,11 @@ const Projects = () => {
   return (
     <div className="projectspage-container">
       <HeaderNav/>
-      <h1 className="heading">Projects content</h1>
-      {/* page content - site name, linkedin button, project example */}
+      <div className="projectspage-content">
+        <div className="projectspage-content-heading">
+          Projects
+        </div>
+      </div>
       <Footer/>
     </div>
   )
