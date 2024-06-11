@@ -7,6 +7,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  min-height: 4rem;
 
   &-links-container {
     padding-left: 0.5rem;
@@ -17,6 +18,7 @@
     flex-direction: row;
     padding: 0 !important;
     align-items: center;
+    margin: 0;
 
     li {
       list-style-type: none !important;
