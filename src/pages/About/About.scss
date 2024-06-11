@@ -1,5 +1,15 @@
 @import "../../variables";
 
+.aboutpage-container {
+  background-image: linear-gradient(rgba(241, 251, 255, 0.3),rgba(241, 251, 255, 0.3)), url("../../assets/images/banner.png");
+  background-size: contain;
+  background-position: center;
+
+  @media (max-width: 992px) {
+    background-size: cover;
+  }
+}
+
 .aboutpage-content {
   color: $site-green;
   font-family: $font-secondary;
@@ -13,8 +23,12 @@
     display: flex;
     flex-direction: column;
 
+    @media (max-width: 1200) {
+      font-size: 4rem;
+    }
+
     @media (max-width: 576px) {
-      font-size: 40px;
+      font-size: 3rem;
     }
   }
 
@@ -27,9 +41,17 @@
     }
 
     &-text {
-      font-size: 1.25rem;
+      background-color: rgba(255,255,255, 0.8);
+      border-radius: 0.5rem;
+      font-size: 1rem;
       font-weight: 200;
       text-align: center;
+      padding: 1rem;
+      margin-top: 0.5rem;
+
+      @media (max-width: 992px) {
+        padding: 1rem 4rem 0 4rem;
+      }
     }
   }
 }

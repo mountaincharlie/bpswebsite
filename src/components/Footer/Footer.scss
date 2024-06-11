@@ -1,15 +1,6 @@
 @import "../../variables";
 
 .footer {
-  // position: fixed;
-  // bottom: 0;
-  // left: 0;
-  // width: 100%;
-  // background-color: $site-yellow;
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
-  // justify-content: space-between;
   width: 100%;
   background-color: $site-yellow;
   display: flex;
@@ -31,6 +22,10 @@
       list-style-type: none !important;
       display: flex;
       align-items: center;
+
+      @media (max-width: 576px) {
+        font-size: 10px;
+      }
     }
 
     a {
@@ -52,5 +47,9 @@
     color: $site-green;
     font-size: small;
     padding-right: 1rem;
+
+    @media (max-width: 576px) {
+      font-size: 10px;
+    }
   }
 }

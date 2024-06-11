@@ -15,7 +15,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/approach" element={<Approach />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/collaborators" element={<Collaborators />} />
+        {/* <Route path="/collaborators" element={<Collaborators />} /> */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </HashRouter>

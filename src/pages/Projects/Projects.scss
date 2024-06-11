@@ -1,9 +1,14 @@
 @import "../../variables";
 
+
 .projectspage-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh !important;
+  background-image: linear-gradient(rgba(241, 251, 255, 0.3),rgba(241, 251, 255, 0.3)), url("../../assets/images/banner.png");
+  background-size: contain;
+  background-position: center;
+
+  @media (max-width: 1200px) {
+    background-size: cover;
+  }
 }
 
 .projectspage-content {
@@ -15,15 +20,70 @@
   overflow-y: auto;
 
   &-heading {
+    margin-left: 2rem;
+    margin-top: 2rem;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 100px;
-    word-spacing: 2rem;
-    letter-spacing: 1rem;
+    font-size: 5rem;
+    word-spacing: 0.5rem;
+    letter-spacing: 0.1rem;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin-left: 1rem;
-    margin-top: 0.5rem;
+
+    @media (max-width: 992px) {
+      margin-left: 0;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 3rem;
+    }
+  }
+
+  &-desc-text {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    background-color: rgba(255,255,255, 0.8);
+    border-radius: 0.5rem;
+    padding: 2rem 1rem;
+
+    @media (max-width: 992px) {
+      padding: 2rem;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 1.5rem;
+      padding: 2rem 0.5rem 0 0.5rem;
+      margin: 0;
+    }
+
+    strong {
+      display: block;
+    }
+
+    &-subtext {
+      font-size: 1.25rem;
+
+      @media (max-width: 576px) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &-desc {
+
+    @media (max-width: 992px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    img {
+      border-radius: 0.5rem;
+
+      @media (max-width: 992px) {
+        width: 50%;
+        // margin: 1rem;
+      }
+    }
   }
 }
