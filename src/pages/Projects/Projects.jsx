@@ -31,7 +31,7 @@ const Projects = () => {
             <img src={projects_2} className="img-fluid ms-1" alt="Projects image"/>
           </div>
           <div className="col-12 col-lg-8 text-center">
-            <div className="projectspage-content-desc-text mt-4 text-align-center">
+            <div className="projectspage-content-desc-text mt-4">
               <strong>The Bill and Melinda Gates Foundation</strong>
               <small className="projectspage-content-desc-text-subtext">Structuring a climate adaptation blended finance vehicle.</small>
             </div>
